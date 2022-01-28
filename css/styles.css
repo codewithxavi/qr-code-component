@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+:root {
+  --bg-body: #d5e1ef;
+  --card-color: #ffffff;
+  --h1-color: #1f3251;
+  --p-color: #7b879d;
+  --card-radius: 2rem;
+  --img-radius: 1rem;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--bg-body);
+  font-size: 15px;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+main.qr {
+  background: var(--card-color);
+  min-width: 320px;
+  max-width: 420px;
+  border-radius: var(--card-radius);
+  padding: 1.5rem;
+}
+
+img.qr__img {
+  width: 100%;
+  border-radius: var(--img-radius);
+}
+
+h1.qr__h1 {
+  color: var(--h1-color);
+  text-align: center;
+  font-weight: 700;
+}
+
+p.qr__p {
+  color: var(--p-color);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px
+}
+
+span {
+  position: absolute;
+  top: 85%;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(left, #3685fe, #1f3251);
+  background-clip: text;
+  width: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.validated {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.validated img {
+  width: calc(88px * 3);
+  height: calc(31px * 3);
+}
+
+code{
+  text-decoration: underline #3685fe;
+}
+
+@media screen and (max-width: 401px) {
+  main.qr {
+    margin: 50px;
+  }
+
+  h1.qr__h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  p.qr__p {
+    width: 100%;
+  }
+}
